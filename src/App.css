@@ -1,7 +1,30 @@
 .App {
   text-align: center;
 }
+img {
+  margin: auto;
+  cursor: pointer;
+  padding: 10px;
+}
 
+.bar {
+  transform: translateY(50vh);
+}
+
+.barClicked {
+  padding: 20px !important;
+  transition: transform 0.6s;
+  transform: translateY(0);
+}
+input,
+.input {
+  background: rgb(73, 64, 64) !important;
+  color: white !important;
+  width: 50%;
+}
+.grid {
+  background: grey;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -20,13 +43,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
